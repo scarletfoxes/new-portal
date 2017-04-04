@@ -24,21 +24,27 @@ var vaildPassword = $(this).attr("HAWK2017")
 //   return false;
 //   }
 // }
-
-$('#un').addEventListener($('#submit'), function (event) {
-  if (currentValue.match(vaildUser)) {
-  	$('#pass').addEventListener($('#submit'), function (event) {
-  		if (currentValue.match(vaildPassword)) {
-   	 window.location.href = "/main-page";
+// function (){
+// 	if ($('#pass').match('HAWK2017') && $('#un').match('jdoe2')) {
+// 		window.location.href = "/main-page/";
+// 	}
+// }
+ $('#form').on('submit', function (event) {
+ if (currentValue.match(vaildUser)) {
+		if (currentValue.match(vaildPassword)) {
+			var newURL = window.location.href + "main-page";
+			alert(newURL);
+ 	 window.location.replace(newURL);
    		}
-    else{
-    	$('#pass').innerHTML("Username/password combination not found");}
-    }
-	});
-  } else {
-  	$('#un').setCustomValidity("Username not found");
-  }
+   else{
+  	alert("Username/password combination not found");
+   }	
+}
 });
+//   } else {
+//   	$('#un').setCustomValidity("Username not found");
+//   }
+// });
     // $('#un').on('keyup focus blur', function(){
     // var currentValue = $(this).val();
     // var vaildPattern = $(this).attr('pattern');
