@@ -17,15 +17,15 @@
 </header>
 <section id="login-form">
   <h2>Log In</h2>
-<form action="/main-page" method="post" id="form">
+<form action="/new-portal/main-page" method="post" id="form">
   <ol>
     <li id="input-un">
     <label for="un">Username:</label>
-    <input required type="text" name="name" id="un" placeholder="jstudent1" value="jdoe2" />
+    <input required type="text" name="name" id="un" placeholder="jstudent1" />
     </li>
     <li id="input-pass">
     <label for="pass">Password:</label>
-    <input required autocomplete="current-password" type="password" name="pass" id="pass" value="HAWK2017" />
+    <input required autocomplete="current-password" type="password" name="pass" id="pass" pattern="HAWK2017" />
     </li>
     <li id="input-submit">
       <input type="submit" name="submit" id="submit" value="Login"/>
