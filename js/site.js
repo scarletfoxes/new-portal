@@ -6,32 +6,35 @@ jQuery(function($){
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
-var currentUser = $('#un').val(str);
-var vaildUser = "jdoe2";
-var currentPassword = $('#pass').val(str);
-var vaildPassword = "HAWK2017";
+// var currentUser = $('#un').val();
+// var vaildUser = "jdoe2";
+// var currentPassword = $('#pass').val();
+// var vaildPassword = "HAWK2017";
 
-console.log(currentUser, vaildUser);
-console.log(currentPassword, vaildPassword);
+$('#un').on('keyup focus blur', function(){
+    window.currentUser = $(this).val();
+console.log(currentUser);
+});
 
+$('#pass').on('keyup focus blur', function(){
+    window.currentPassword = $(this).val();
+console.log(currentPassword);
+});
 
  $('#form').on('submit', function(event) {
-  alert("in loop");
-  alert(currentUser);
  	event.preventDefault();
-   if (currentUser=vaildUser) {
+   if (currentUser=="jdoe2") {
   alert("in if");
-    if (currentPassword=vaildPassword) {
+    if (currentPassword=="HAWK2017") {
       alert("in if if");
       var newURL = window.location.href + "main-page";
    window.location.href = (newURL);
       } 
-   else if (currentUser!=vaildUser){
-     alert("hi");
+   else{
     alert("Username/password combination not found");
    }  
 }
-else if (currentPassword!=vaildPassword){
+else{
   alert("Username not found")
 }
 
