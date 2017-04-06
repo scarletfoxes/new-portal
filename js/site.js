@@ -17,7 +17,23 @@ console.log(currentPassword, vaildPassword);
 
  $('#form').on('submit', function(event) {
   alert("in loop");
+  alert(currentUser);
  	event.preventDefault();
+   if (currentUser=vaildUser) {
+  alert("in if");
+    if (currentPassword=vaildPassword) {
+      alert("in if if");
+      var newURL = window.location.href + "main-page";
+   window.location.href = (newURL);
+      } 
+   else if (currentUser!=vaildUser){
+     alert("hi");
+    alert("Username/password combination not found");
+   }  
+}
+else if (currentPassword!=vaildPassword){
+  alert("Username not found")
+}
 
 });
 
