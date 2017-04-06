@@ -13,20 +13,16 @@ jQuery(function($){
 
 $('#un').on('keyup focus blur', function(){
     window.currentUser = $(this).val();
-console.log(currentUser);
 });
 
 $('#pass').on('keyup focus blur', function(){
     window.currentPassword = $(this).val();
-console.log(currentPassword);
 });
 
  $('#form').on('submit', function(event) {
  	event.preventDefault();
    if (currentUser=="jdoe2") {
-  alert("in if");
     if (currentPassword=="HAWK2017") {
-      alert("in if if");
       var newURL = window.location.href + "main-page";
    window.location.href = (newURL);
       } 
@@ -37,7 +33,6 @@ console.log(currentPassword);
 else{
   alert("Username not found")
 }
-
 });
-
+ 
 });
