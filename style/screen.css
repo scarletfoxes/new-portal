@@ -267,14 +267,14 @@ footer {
 
 
 /* ===== STATE STYLES ===== */
-.hasjs input[type="submit"] {
+/*.hasjs input[type="submit"] {
   position: absolute;
-  left: -5555.556em;/*-100000px*/
+  left: -5555.556em;-100000px
 }
 
 .hasjs input[type="submit"].active {
   position: static;
-}
+}*/
 
 /* 500px @ 16px for tablet/ipad scale */
 @media screen and (min-width: 31.25em) { 

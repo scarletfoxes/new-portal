@@ -6,50 +6,33 @@ jQuery(function($){
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
-var currentUser = $('#un').val();
-var vaildUser = "jdoe2";
-var currentPassword = $('#pass').val();
-var vaildPassword = "HAWK2017";
+// var currentUser = $('#un').val();
+// var vaildUser = "jdoe2";
+// var currentPassword = $('#pass').val();
+// var vaildPassword = "HAWK2017";
 
 $('#un').on('keyup focus blur', function(){
-    var currentUser = $('#un').val();
-    var vaildUser = "jdoe2"
-    if(currentUser.match(vaildUser)){
-      $('#submit').addClass('active');
-    }
-    else{
-      $('#submit').removeClass('active');
-    }
-  });
+    window.currentUser = $(this).val();
+});
 
 $('#pass').on('keyup focus blur', function(){
-    var currentPassword = $('#pass').val();
-    var vaildPassword = "HAWK2017"
-    if(currentPassword.match(vaildPassword)){
-      $('#submit').addClass('active');
-    }
-    else{
-      $('#submit').removeClass('active');
-    }
-  });
+    window.currentPassword = $(this).val();
+});
 
- $('#form').on('submit', function (event) {
+ $('#form').on('submit', function(event) {
  	event.preventDefault();
- if (currentUser=vaildUser) {
-		if (currentPassword=vaildPassword) {
-			var newURL = window.location.href + "main-page";
- 	 window.location.href = (newURL);
-   		}	
+   if (currentUser=="jdoe2") {
+    if (currentPassword=="HAWK2017") {
+      var newURL = window.location.href + "main-page";
+   window.location.href = (newURL);
+      } 
    else{
-  	alert("Username/password combination not found");
-   }	
+    alert("Username/password combination not found");
+   }  
 }
 else{
-	alert("Username not found")
+  alert("Username not found")
 }
 });
-
-$('.forgot').on('click', function (event) {
- 	 window.location.href = "https://ots.iit.edu/help-and-support";
-});
+ 
 });
