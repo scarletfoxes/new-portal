@@ -184,47 +184,107 @@ textarea {
 /* ===== BASE STYLES ===== */
 
 /*
-  Setting type to a ______ modular scale
+  Setting type to a perfect fourth(3:4) modular scale
   http://www.modularscale.com/
 */
 
 html {
-  background-color: ;
-  font-size: ;
-  line-height: ; 
-  font-family: ;
+  background-color: #d3deff;
+  font-size: 1em;/*16px*/
+  line-height: 2.125em; /*34px @ 16;*/ 
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  background-color: #FFFFFF;
+  font-weight: 400;
 }
 
 /*all em's are divided by new base 16*/
 h1 {
-  font-size: ;
-  line-height: ;
-  color: ;
-  text-shadow: ;
+  font-size: 1.777em;/*28.43px @ 16;*/
+  line-height: 2.392em;/*68px @ 28.43px;*/
+  font-family: inherit;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.333em;/*21.328px @ 16;*/
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #778899;
+}
+
+/* Form */
+label,
+input {
+  box-sizing: border-box;
+  display: block;
+  font-family: inherit;
+  /*font-size: inherit;
+  line-height: inherit;*/
 }
 
 /* ===== RESPONSIVE MEDIA ===== */
-
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
 
 /* ===== LAYOUT STYLES ===== */
+#content {
+  padding: 2.125em; /*34px @ 16;*/ 
+}
+
+#login-form {
+  background-color: #DCDCDC;
+  border-radius: 0.3em;
+  padding: 2.125em; /*34px @ 16;*/ 
+}
+
+#input-pass {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer {
+  text-align: center; 
+}
 
 /* ===== MODULAR STYLES ===== */
+.forgot:hover {
+  text-decoration: underline;
+  color: #FF0000;
+}
 
+#submit:hover {
+  background-color: #C0C0C0;
+}
 
 
 /* ===== STATE STYLES ===== */
-.hasjs input[type=""] {
- 
+.hasjs input[type="submit"] {
+  position: absolute;
+  left: -5555.556em;/*-100000px*/
 }
 
-.hasjs input[type=""].active {
+.hasjs input[type="submit"].active {
   position: static;
 }
 
-@media screen and (min-width: ) { 
-
+/* 500px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 31.25em) { 
+html {
+    font-size: ;
+    line-height: ;
+  }
 }
 
-@media screen and (min-width: ) { 
+/* 1024px @ 16px for laptop */
+@media screen and (min-width: 64em) { 
  
 }
