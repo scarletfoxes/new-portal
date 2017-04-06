@@ -11,45 +11,14 @@ var vaildUser = "jdoe2";
 var currentPassword = $('#pass').val();
 var vaildPassword = "HAWK2017";
 
-$('#un').on('keyup focus blur', function(){
-    var currentUser = $('#un').val();
-    var vaildUser = "jdoe2"
-    if(currentUser.match(vaildUser)){
-      $('#submit').addClass('active');
-    }
-    else{
-      $('#submit').removeClass('active');
-    }
-  });
+console.log(currentUser, vaildUser);
+console.log(currentPassword, vaildPassword);
 
-$('#pass').on('keyup focus blur', function(){
-    var currentPassword = $('#pass').val();
-    var vaildPassword = "HAWK2017"
-    if(currentPassword.match(vaildPassword)){
-      $('#submit').addClass('active');
-    }
-    else{
-      $('#submit').removeClass('active');
-    }
-  });
 
- $('#form').on('submit', function (event) {
+ $('#form').on('submit', function(event) {
+  alert("in loop");
  	event.preventDefault();
- if (currentUser=vaildUser) {
-		if (currentPassword=vaildPassword) {
-			var newURL = window.location.href + "main-page";
- 	 window.location.href = (newURL);
-   		}	
-   else{
-  	alert("Username/password combination not found");
-   }	
-}
-else{
-	alert("Username not found")
-}
+
 });
 
-$('.forgot').on('click', function (event) {
- 	 window.location.href = "https://ots.iit.edu/help-and-support";
-});
 });
