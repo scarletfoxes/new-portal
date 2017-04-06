@@ -6,9 +6,9 @@ jQuery(function($){
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
-var currentUser = $('#un').val();
+var currentUser = $('#un').val(str);
 var vaildUser = "jdoe2";
-var currentPassword = $('#pass').val();
+var currentPassword = $('#pass').val(str);
 var vaildPassword = "HAWK2017";
 
 console.log(currentUser, vaildUser);
