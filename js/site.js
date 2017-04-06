@@ -11,6 +11,28 @@ var vaildUser = "jdoe2";
 var currentPassword = $('#pass').val();
 var vaildPassword = "HAWK2017";
 
+$('#un').on('keyup focus blur', function(){
+    var currentUser = $('#un').val();
+    var vaildUser = "jdoe2"
+    if(currentUser.match(vaildUser)){
+      $('#submit').addClass('active');
+    }
+    else{
+      $('#submit').removeClass('active');
+    }
+  });
+
+$('#pass').on('keyup focus blur', function(){
+    var currentPassword = $('#pass').val();
+    var vaildPassword = "HAWK2017"
+    if(currentPassword.match(vaildPassword)){
+      $('#submit').addClass('active');
+    }
+    else{
+      $('#submit').removeClass('active');
+    }
+  });
+
  $('#form').on('submit', function (event) {
  	event.preventDefault();
  if (currentUser=vaildUser) {
