@@ -251,6 +251,15 @@ img, audio, video {
   padding-bottom: 1em;
 }
 
+#input-submit {
+  padding-bottom: 1em;
+}
+
+#h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 footer {
   text-align: center; 
 }
