@@ -10,6 +10,10 @@ jQuery(function($){
 // var vaildUser = "jdoe2";
 // var currentPassword = $('#pass').val();
 // var vaildPassword = "HAWK2017";
+var error = 'error';
+var showError = false;
+window.currentUser = "";
+window.currentPassword = "";
 
 $('#un').on('keyup focus blur', function(){
     window.currentUser = $(this).val();
@@ -21,18 +25,17 @@ $('#pass').on('keyup focus blur', function(){
 
  $('#form').on('submit', function(event) {
  	event.preventDefault();
-   if (currentUser=="jdoe2") {
-    if (currentPassword=="HAWK2017") {
-      var newURL = window.location.href + "main-page";
-   window.location.href = (newURL);
+   if (currentUser=="jdoe2" &&  currentPassword=="HAWK2017") {
+    var newURL = window.location.href + "main-page";
+    window.location.href = (newURL);
       } 
    else{
-    alert("Username/password combination not found");
-   }  
-}
-else{
-  alert("Username not found")
-}
+      if (!showError) {
+         $('#list').append($('<li></li>', { class: error, text : 'Username/password combination not found'}));
+         showError=true;
+      } 
+}  
+
 });
  
 });

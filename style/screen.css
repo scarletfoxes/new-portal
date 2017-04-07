@@ -265,7 +265,11 @@ footer {
   background-color: #C0C0C0;
 }
 
-
+.error {
+  color: red;
+  border: 0.1em solid;
+  border-radius: 0.1em; 
+}
 /* ===== STATE STYLES ===== */
 /*.hasjs input[type="submit"] {
   position: absolute;
