@@ -191,7 +191,7 @@ textarea {
 html {
   background-color: #d3deff;
   font-size: 1em;/*16px*/
-  line-height: 1.2em; /*19.2px @ 16;*/ 
+  line-height: 1.2em; /*19.2px @ 16;*/
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   background-color: #FFFFFF;
   font-weight: 400;
@@ -237,13 +237,13 @@ img, audio, video {
 
 /* ===== LAYOUT STYLES ===== */
 #content {
-  padding: 1.351em;/*38.4px @ 28.43px;*/ 
+  padding: 1.351em;/*38.4px @ 28.43px;*/
 }
 
 #login-form {
   background-color: #DCDCDC;
   border-radius: 0.3em;
-  padding: 1.351em;/*38.4px @ 28.43px;*/ 
+  padding: 1.351em;/*38.4px @ 28.43px;*/
 }
 
 #input-pass {
@@ -261,8 +261,52 @@ img, audio, video {
 }
 
 footer {
-  text-align: center; 
+  text-align: center;
 }
+
+/* Steves edits *************/
+
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+/*****end od steves current css changes******/
 
 /* ===== MODULAR STYLES ===== */
 .forgot:hover {
@@ -277,20 +321,19 @@ footer {
 .error {
   color: red;
   border: 0.1em solid;
-  border-radius: 0.1em; 
+  border-radius: 0.1em;
 }
 /* ===== STATE STYLES ===== */
 /*.hasjs input[type="submit"] {
   position: absolute;
   left: -5555.556em;-100000px
 }
-
 .hasjs input[type="submit"].active {
   position: static;
 }*/
 
 /* 500px @ 16px for tablet/ipad scale */
-@media screen and (min-width: 31.25em) { 
+@media screen and (min-width: 31.25em) {
 html {
     font-size: ;
     line-height: ;
@@ -298,6 +341,6 @@ html {
 }
 
 /* 1024px @ 16px for laptop */
-@media screen and (min-width: 64em) { 
- 
+@media screen and (min-width: 64em) {
+
 }
