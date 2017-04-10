@@ -191,11 +191,7 @@ textarea {
 html {
   background-color: #d3deff;
   font-size: 1em;/*16px*/
-<<<<<<< HEAD
-  line-height: 2.125em; /*34px @ 16;*/
-=======
   line-height: 1.2em; /*19.2px @ 16;*/
->>>>>>> eafd1b6bdfd8fcf48e49609376d59d59fd559b11
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   background-color: #FFFFFF;
   font-weight: 400;
@@ -241,21 +237,13 @@ img, audio, video {
 
 /* ===== LAYOUT STYLES ===== */
 #content {
-<<<<<<< HEAD
-  padding: 2.125em; /*34px @ 16;*/
-=======
   padding: 1.351em;/*38.4px @ 28.43px;*/
->>>>>>> eafd1b6bdfd8fcf48e49609376d59d59fd559b11
 }
 
 #login-form {
   background-color: #DCDCDC;
   border-radius: 0.3em;
-<<<<<<< HEAD
-  padding: 2.125em; /*34px @ 16;*/
-=======
   padding: 1.351em;/*38.4px @ 28.43px;*/
->>>>>>> eafd1b6bdfd8fcf48e49609376d59d59fd559b11
 }
 
 #input-pass {
@@ -296,7 +284,6 @@ footer {
   position: absolute;
   left: -5555.556em;-100000px
 }
-
 .hasjs input[type="submit"].active {
   position: static;
 }*/
