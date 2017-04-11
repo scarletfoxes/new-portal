@@ -1,4 +1,4 @@
-//Teel jQuery to give up the dollar sign 
+//Teel jQuery to give up the dollar sign
 $.noConflict();
 
 //jQuery 3.x-style ready event and locally scoped $
@@ -28,14 +28,14 @@ $('#pass').on('keyup focus blur', function(){
    if (currentUser=="jdoe2" &&  currentPassword=="HAWK2017") {
     var newURL = window.location.href + "main-page";
     window.location.href = (newURL);
-      } 
+      }
    else{
       if (!showError) {
          $('#list').append($('<li></li>', { class: error, text : 'Username/password combination not found'}));
          showError=true;
-      } 
-}  
+      }
+}
 
 });
- 
+
 });
