@@ -6,10 +6,7 @@ jQuery(function($){
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
-// var currentUser = $('#un').val();
-// var vaildUser = "jdoe2";
-// var currentPassword = $('#pass').val();
-// var vaildPassword = "HAWK2017";
+//js to test username and password 
 var error = 'error';
 var showError = false;
 window.currentUser = "";
@@ -36,6 +33,34 @@ $('#pass').on('keyup focus blur', function(){
       }
 }
 
+});
+
+//drop down menu
+// if ($('html').hasClass('nojs')) {
+//   $('#courses').append($('<li></li>', { class: nojs, text : 'Page must enable JaveScript to use feature'
+//   }));
+// }
+
+$('#fall2016').hide();
+$('.spring2017').hide();
+$( "#back").hide();
+
+$('#f16').click(function(){
+  $( "#fall2016").show();
+  $( ".term").hide();
+  $( "#back").show();
+});
+
+$('#s17').click(function(){
+  $( ".spring2017").show();
+  $( ".term").hide();
+  $( "#back").show();
+});
+
+$('#back').click(function(){
+  $( ".term").show();
+  $( "#back").hide();
+  $( "table").hide();
 });
 
 });
