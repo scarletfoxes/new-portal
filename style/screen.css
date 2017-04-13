@@ -210,6 +210,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+
+}
+
 li {
   list-style-type: none;
 }
@@ -309,6 +313,19 @@ z-index: 99;
 footer {
   text-align: center;
 }
+
+table {
+  text-align: center;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+td,
+th {
+  padding: 2px;
+}
+
+
 
 /* Steves edits *************/
 
