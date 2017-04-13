@@ -219,7 +219,7 @@ li a {
   color: #778899;
 }
 
-/* Form */
+/* ======= Form =============*/
 label,
 input {
   box-sizing: border-box;
@@ -235,7 +235,53 @@ img, audio, video {
   max-width: 100%;
 }
 
+
+.menu:hover {
+  color: red;
+}
+
+#toggle{
+  position: relative;
+  z-index: 1;
+}
+
+#burgerMenu {
+  background-color: purple;
+  z-index: 1;
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin: 0px 0 0 -50px;
+  padding: 50px;
+  padding-top: 10px;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#toggle input{
+  display: block;
+  position: absolute;
+  width: 44px;
+  height: 22.4px;
+  top: -2px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 3; 
+}
+
+#toggle input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
 /* ===== LAYOUT STYLES ===== */
+#hamburger {
+padding: 10px
+border: 0;
+z-index: 99;
+}
+
 #content {
   padding: 1.351em;/*38.4px @ 28.43px;*/
 }
@@ -266,7 +312,7 @@ footer {
 
 /* Steves edits *************/
 
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+/*.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -305,7 +351,7 @@ footer {
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-}
+}*/
 /*****end od steves current css changes******/
 
 /* ===== MODULAR STYLES ===== */
