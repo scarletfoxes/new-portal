@@ -218,6 +218,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: #778899;
+}
+
 li a {
   text-decoration: none;
   color: #778899;
@@ -239,9 +244,14 @@ img, audio, video {
   max-width: 100%;
 }
 
-
 .menu:hover {
   color: red;
+  text-decoration: underline;
+}
+
+.title:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 #toggle{
@@ -250,7 +260,7 @@ img, audio, video {
 }
 
 #burgerMenu {
-  background-color: purple;
+  background-color: #D3D3D3;
   z-index: 1;
   position: absolute;
   width: auto;
@@ -310,20 +320,33 @@ z-index: 99;
   padding-bottom: 1em;
 }
 
+.hd {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 footer {
+  position: relative;
   text-align: center;
+  background-color: #FF0000;
 }
 
 table {
+  border-spacing: 0.0625em;
+  border-collapse: collapse;
+  background-color: #D3D3D3;
   text-align: center;
-  table-layout: fixed;
-  width: 500px;
-  word-wrap: break-word;
+  table-layout: fixed;*/
+  width: /*100%;*/ 500px;
+  word-wrap: break-word;*/
+  border: 0.125em /*2px*/ solid;
+
 }
 
 td,
 th {
-  padding: 2px;
+  border: 0.0625em /*1px*/ solid;
+  padding: 0.0625em;
   display: table-cell;
 }
 
@@ -385,8 +408,8 @@ th {
 
 .error {
   color: red;
-  border: 0.1em solid;
-  border-radius: 0.1em;
+  /*border: 0.1em solid;
+  border-radius: 0.1em;*/
 }
 /* ===== STATE STYLES ===== */
 /*.hasjs input[type="submit"] {
