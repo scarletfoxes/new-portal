@@ -24,6 +24,7 @@ $('#pass').on('keyup focus blur', function(){
  	event.preventDefault();
    if (currentUser=="jdoe2" &&  currentPassword=="HAWK2017") {
     var newURL = window.location.href + "main-page";
+    $('#form')[0].reset();
     window.location.href = (newURL);
       }
    else{
@@ -33,6 +34,13 @@ $('#pass').on('keyup focus blur', function(){
       }
 }
 
+});
+
+
+$('.logout').click(function(event){
+  event.preventDefault();
+   $('#form')[0].reset();
+   window.location.href = "../index.html";
 });
 
 //drop down menu
