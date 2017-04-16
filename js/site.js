@@ -38,7 +38,6 @@ $('#pass').on('keyup focus blur', function(){
 
 
 $('.logout').click(function(event){
-  event.preventDefault();
    $('#form')[0].reset();
    window.location.href = "../index.html";
 });
