@@ -451,8 +451,3 @@ th {
     margin-left: 30%;
   }
 }
-
-/* 1024px @ 16px for laptop */
-@media screen and (min-width: 64em) {
-
-}
