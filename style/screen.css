@@ -205,14 +205,15 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2, h3 {
   font-size: 1.333em;/*21.328px @ 16;*/
+  font-family: inherit;
   text-align: center;
 }
 
-h3 {
+/*h3 {
 
-}
+}*/
 
 li {
   list-style-type: none;
@@ -318,6 +319,7 @@ z-index: 99;
 #h1 {
   padding-top: 1em;
   padding-bottom: 1em;
+  text-shadow: 0.0625em 0.0625em 0.125em #000;
 }
 
 .hd {
@@ -326,9 +328,15 @@ z-index: 99;
 }
 
 footer {
-  position: relative;
+  /*position: relative;*/
   text-align: center;
-  background-color: #FF0000;
+  background-color: #CC0000;
+}
+
+.foot {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
 }
 
 table {
@@ -412,19 +420,35 @@ th {
   border-radius: 0.1em;*/
 }
 /* ===== STATE STYLES ===== */
-/*.hasjs input[type="submit"] {
-  position: absolute;
-  left: -5555.556em;-100000px
-}
-.hasjs input[type="submit"].active {
-  position: static;
-}*/
+
+/* 3:4 */
+/*3 + 4 = 7
+500 / 9.6px = 52.08
+3 x 52.08 = 156.24px Grid 1
+4 x 52.08 = 208.32px Grid 2
+768 / 9.6px = 80px
+3 x 80px = 240px Grid 1
+4 x 80px = 320px Grid 2
+*/
 
 /* 500px @ 16px for tablet/ipad scale */
 @media screen and (min-width: 31.25em) {
-html {
-    font-size: ;
-    line-height: ;
+  #login-form {
+    width: 41.66%; /*156.24/500=0.3124, 208.32/500=0.4166*/
+    margin-left: 25%;
+  }
+}
+
+/* 768px @ 16px for tablet/ipad scale */
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 1.333em;/*21.328px @ 16px*/
+    line-height: 1.1998em;/*25.59px @ 21.328px*/
+  }
+  
+ #login-form {
+    width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
+    margin-left: 30%;
   }
 }
 
