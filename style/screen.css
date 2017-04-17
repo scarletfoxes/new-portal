@@ -212,7 +212,6 @@ h2, h3 {
 }
 
 /*h3 {
-
 }*/
 
 li {
@@ -281,8 +280,8 @@ img, audio, video {
   height: 22.4px;
   top: -2px;
   cursor: pointer;
-  opacity: 0; 
-  z-index: 3; 
+  opacity: 0;
+  z-index: 3;
 }
 
 #toggle input:checked ~ ul {
@@ -370,7 +369,6 @@ th {
 .menu ul li a:hover {  color: #666; text-decoration:none;}
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#666;}
-
 }
 .hamburger{
   background:none;
@@ -445,7 +443,7 @@ th {
     font-size: 1.333em;/*21.328px @ 16px*/
     line-height: 1.1998em;/*25.59px @ 21.328px*/
   }
-  
+
  #login-form {
     width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
     margin-left: 30%;
