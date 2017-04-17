@@ -6,7 +6,7 @@ jQuery(function($){
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
-//js to test username and password 
+//js to test username and password
 var error = 'error';
 var showError = false;
 window.currentUser = "";
@@ -37,9 +37,11 @@ $('#pass').on('keyup focus blur', function(){
 });
 
 
-$('.logout').click(function(event){
+$('#logout').click(function(event){
+alert('You have been succesfully logged out.');
    $('#form')[0].reset();
-   window.location.href = "../../index.html";
+   window.location = "../index.html";
+   event.preventDefault();
 });
 
 //drop down menu
