@@ -212,7 +212,6 @@ h2, h3 {
 }
 
 /*h3 {
-
 }*/
 
 li {
@@ -281,8 +280,8 @@ img, audio, video {
   height: 22.4px;
   top: -2px;
   cursor: pointer;
-  opacity: 0; 
-  z-index: 3; 
+  opacity: 0;
+  z-index: 3;
 }
 
 #toggle input:checked ~ ul {
@@ -358,6 +357,39 @@ th {
   display: table-cell;
 }
 
+/****FLEXBOX STUFF FOR MAIN-PAGE IDK WHERE TO PUT IT*********************/
+
+#main section {
+  border-style: solid;
+  border-width: thick;
+}
+
+#main {
+  min-height: 31.25em;
+  margin-top: 3em;
+  /*padding: 0em;*/
+  display: flex;
+  flex-flow: row;
+  /*background-color: green;*/
+}
+#main > #leftCol {
+  margin: 0.375em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
+  flex: 1 6 33%;
+  order: 1;
+  /*background-color: blue;*/
+}
+
+#main > #midCol {
+  margin: 0.375em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
+  flex: 1 6 33%;
+  order: 2;
+  /*background-color: yellow;*/
+}
+
 
 
 /* Steves edits *************/
@@ -370,7 +402,6 @@ th {
 .menu ul li a:hover {  color: #666; text-decoration:none;}
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#666;}
-
 }
 .hamburger{
   background:none;
@@ -445,7 +476,7 @@ th {
     font-size: 1.333em;/*21.328px @ 16px*/
     line-height: 1.1998em;/*25.59px @ 21.328px*/
   }
-  
+
  #login-form {
     width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
     margin-left: 30%;
