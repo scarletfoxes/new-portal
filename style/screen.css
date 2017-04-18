@@ -435,7 +435,7 @@ th {
 */
 
 /* 500px @ 16px for tablet/ipad scale */
-@media screen and (min-width: 21.25em) {
+@media screen and (min-width: 31.25em) {
   #login-form {
     width: 41.66%; /*156.24/500=0.3124, 208.32/500=0.4166*/
     margin-left: 25%;
