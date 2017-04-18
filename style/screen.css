@@ -321,6 +321,15 @@ z-index: 99;
   text-shadow: 0.0625em 0.0625em 0.125em #000;
 }
 
+#redCol {
+  padding: 0.5em;
+  margin-left: 20em;
+  margin-right: 20em;
+  border-style: solid;
+  border-width: thick;
+  /*background-color: yellow;*/
+}
+
 .hd {
   text-transform: uppercase;
   font-weight: bold;
@@ -390,6 +399,14 @@ th {
   /*background-color: yellow;*/
 }
 
+#main > #midCol {
+  margin: 0.375em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
+  flex: 1 6 33%;
+  order: 2;
+  /*background-color: yellow;*/
+}
 
 
 /* Steves edits *************/
