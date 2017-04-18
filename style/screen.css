@@ -330,6 +330,9 @@ z-index: 99;
   /*background-color: yellow;*/
 }
 
+#main > p {
+  text-align: center;
+}
 .hd {
   text-transform: uppercase;
   font-weight: bold;
