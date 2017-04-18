@@ -330,9 +330,11 @@ z-index: 99;
   /*background-color: yellow;*/
 }
 
-#main > p {
+#news {
   text-align: center;
+  margin: .5em;
 }
+
 .hd {
   text-transform: uppercase;
   font-weight: bold;
