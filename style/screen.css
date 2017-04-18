@@ -258,10 +258,6 @@ border: 0;
 z-index: 99;
 }
 
-input {
-  background-color: yellow;
-}
-
 #content {
   padding: 1.351em;/*38.4px @ 28.43px;*/
 }
@@ -410,14 +406,6 @@ th {
   opacity: 1;
 }
 
-#main > #midCol {
-  margin: 0.375em;
-  padding-left: 0.3125em;
-  padding-right: 0.3125em;
-  flex: 1 6 33%;
-  order: 2;
-  /*background-color: yellow;*/
-}
 
 /* ===== MODULAR STYLES ===== */
 .forgot:hover {
