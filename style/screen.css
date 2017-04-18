@@ -1,11 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
-
 /* begin normalize.css form styles */
 /* https://github.com/necolas/normalize.css */
 
@@ -255,38 +247,8 @@ img, audio, video {
 }
 
 #toggle{
-  position: relative;
-  z-index: 1;
-}
-
-#burgerMenu {
-  background-color: #D3D3D3;
-  z-index: 1;
   position: absolute;
-  width: auto;
-  height: auto;
-  margin: 0px 0 0 -50px;
-  padding: 50px;
-  padding-top: 10px;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#toggle input{
-  display: block;
-  position: absolute;
-  width: 44px;
-  height: 22.4px;
-  top: -2px;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 3;
-}
-
-#toggle input:checked ~ ul {
-  transform: scale(1.0, 1.0);
-  opacity: 1;
+  z-index: 1;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -413,17 +375,24 @@ th {
 
 /****FLEXBOX STUFF FOR MAIN-PAGE IDK WHERE TO PUT IT*********************/
 
+#navi {
+  position: fixed;
+  margin-top: 0.1em;
+}
+
 #main section {
   border-style: solid;
   border-width: thick;
 }
 
 #main {
-  min-height: 31.25em;
-  margin-top: 3em;
+  min-height: 72.50em;
+  margin-top: -1.8em;
+  padding-left: 10em;
+  padding-top: 1.5em;
   /*padding: 0em;*/
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   /*background-color: green;*/
 }
 #main > #leftCol {
@@ -444,58 +413,44 @@ th {
   /*background-color: yellow;*/
 }
 
-#main > #midCol {
-  margin: 0.375em;
+#main > #rightCol {
+  margin:0.375em;
   padding-left: 0.3125em;
   padding-right: 0.3125em;
   flex: 1 6 33%;
-  order: 2;
-  /*background-color: yellow;*/
+  order: 3;
+  /*background-color: orange;*/
 }
 
-
-/* Steves edits *************/
-
-/*.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
-.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
-.menu ul li a:hover {  color: #666; text-decoration:none;}
-.menu a{text-decoration:none; color:#666;}
-.menu a:hover{text-decoration:none; color:#666;}
+#burgerMenu {
+  background-color: #191919;
+  z-index: 1;
+  width: 5.5em;
+  height: 45%;
+  margin: 0px 0 0 -50px;
+  padding: 50px;
+  padding-top: 10px;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  padding:5px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
+
+#toggle input{
+  display: block;
+  position: absolute;
+  width: 44px;
+  height: 22.4px;
+  top: -2px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
 }
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  right:0;
-  padding:7px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:3em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}*/
-/*****end od steves current css changes******/
+
+#toggle input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
 
 /* ===== MODULAR STYLES ===== */
 .forgot:hover {
@@ -537,6 +492,75 @@ th {
   html {
     font-size: 1.333em;/*21.328px @ 16px*/
     line-height: 1.1998em;/*25.59px @ 21.328px*/
+  }
+
+  .navi {
+    width: 100%;
+    line-height: 1em;
+    position: absolute;
+  }
+
+  .navi li {
+    border: thin solid white;
+    float: left;
+    width: 13%;
+    margin: 0.2em;
+    padding: 0;
+    background-color: yellow;
+
+  }
+
+  .navi li a {
+    display: block;
+    padding : 10%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .navi ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #main {
+    min-height: 31.25em;
+    margin-top: 4em;
+    padding-left: 0;
+    /*padding: 0em;*/
+    display: flex;
+    flex-flow: row;
+    /*background-color: green;*/
+  }
+  #main > #leftCol {
+    margin: 0.375em;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
+    flex: 1 6 33%;
+    order: 1;
+    /*background-color: blue;*/
+  }
+
+  #main > #midCol {
+    margin: 0.375em;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
+    flex: 1 6 33%;
+    order: 2;
+    /*background-color: yellow;*/
+  }
+
+  #main > #rightCol {
+    margin: 0.375em;
+    padding-left: 0.3125em;
+    padding-right: 0.3125em;
+    flex: 1 6 33%;
+    order: 3;
+    /*background-color: orange;*/
+  }
+
+  #burgerMenu {
+    width: 100%;
+    height: auto;
   }
 
  #login-form {
