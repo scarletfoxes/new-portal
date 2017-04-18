@@ -181,7 +181,7 @@ textarea {
 */
 
 html {
-  background-color: #d3deff;
+
   font-size: 1em;/*16px*/
   line-height: 1.2em; /*19.2px @ 16;*/
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
@@ -246,16 +246,16 @@ img, audio, video {
   text-decoration: underline;
 }
 
-#toggle{
+#toggle {
   position: absolute;
   z-index: 1;
 }
 
 /* ===== LAYOUT STYLES ===== */
 #hamburger {
-padding: 10px
-border: 0;
-z-index: 99;
+  padding: 10px;
+  border: 0;
+  z-index: 99;
 }
 
 #content {
@@ -325,7 +325,7 @@ footer {
   display: inline-flex;
 }
 
-h5{
+h5 {
   margin-right: 10px;
 }
 
@@ -349,25 +349,6 @@ h5{
   margin-right: 10px;
 }
 
-table {
-  border-spacing: 0.0625em;
-  border-collapse: collapse;
-  background-color: #D3D3D3;
-  text-align: center;
-  table-layout: fixed;*/
-  width: /*100%;*/ 500px;
-  word-wrap: break-word;*/
-  border: 0.125em /*2px*/ solid;
-
-}
-
-td,
-th {
-  border: 0.0625em /*1px*/ solid;
-  padding: 0.0625em;
-  display: table-cell;
-}
-
 /****FLEXBOX STUFF FOR MAIN-PAGE IDK WHERE TO PUT IT*********************/
 
 #navi {
@@ -381,7 +362,7 @@ th {
 }
 
 #main {
-  min-height: 72.50em;
+  min-height: 72.5em;
   margin-top: -1.8em;
   padding-left: 10em;
   padding-top: 1.5em;
@@ -409,7 +390,7 @@ th {
 }
 
 #main > #rightCol {
-  margin:0.375em;
+  margin: 0.375em;
   padding-left: 0.3125em;
   padding-right: 0.3125em;
   flex: 1 6 33%;
@@ -422,15 +403,15 @@ th {
   z-index: 1;
   width: 5.5em;
   height: 45%;
-  margin: 0px 0 0 -50px;
+  margin: 0 0 0 -50px;
   padding: 50px;
   padding-top: 10px;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1);
 }
 
-#toggle input{
+#toggle input {
   display: block;
   position: absolute;
   width: 44px;
@@ -442,7 +423,7 @@ th {
 }
 
 #toggle input:checked ~ ul {
-  transform: scale(1.0, 1.0);
+  transform: scale(1, 1);
   opacity: 1;
 }
 
@@ -507,7 +488,7 @@ th {
 
   .navi li a {
     display: block;
-    padding : 10%;
+    padding: 10%;
     text-align: center;
     text-decoration: none;
   }
@@ -558,7 +539,7 @@ th {
     height: auto;
   }
 
- #login-form {
+  #login-form {
     width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
     margin-left: 30%;
   }
