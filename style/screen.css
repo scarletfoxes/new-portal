@@ -309,6 +309,10 @@ footer {
   color: white;
 }
 
+.course-lists {
+  overflow-y: auto;
+}
+
 .fall2016,
 .spring2017,
 .fall2017 {
