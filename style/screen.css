@@ -309,9 +309,14 @@ footer {
   color: white;
 }
 
-.fall2016,
-.spring2017,
-.fall2017 {
+.course-lists {
+  overflow-y: auto;
+}
+
+.fall2016-table,
+.spring2017-table,
+.fall2017-table,
+.course-lists {
   display: inline-flex;
   width: 100%;
   flex-direction: column;
@@ -320,33 +325,52 @@ footer {
   overflow-y: auto;
 }
 
-.course,
-.table-header {
+.table-header,
+.course {
   display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 h5 {
   margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .id {
   min-width: 72px;
   margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .des {
   min-width: 150px;
   margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .place {
   min-width: 81px;
   margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .time {
   min-width: 90px;
   margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /****FLEXBOX STUFF FOR MAIN-PAGE IDK WHERE TO PUT IT*********************/

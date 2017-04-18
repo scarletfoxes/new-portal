@@ -42,26 +42,35 @@ jQuery(function($){
     event.preventDefault();
   });
 
-//buttons to show courses 
-  $('.fall2016').hide();
-  $('.spring2017').hide();
-  $('.fall2017').hide();
+//buttons to show courses on class-schedule page
+  $('.fall2016-table').hide();
+  $('.spring2017-table').hide();
+  $('.fall2017-table').hide();
   $( "#back").hide();
 
   $('#f16').click(function(){
-    $( ".fall2016").show();
+    $( ".fall2016-table").show();
+    $('.table-header').show();
+    $('.spring2017-table').hide();
+    $('.fall2017-table').hide();
     $( ".term").hide();
     $( "#back").show();
   });
 
   $('#s17').click(function(){
-    $( ".spring2017").show();
+    $( ".spring2017-table").show();
+    $('.table-header').show();
+    $('.fall2016-table').hide();
+    $('.fall2017-table').hide();
     $( ".term").hide();
     $( "#back").show();
   });
 
   $('#f17').click(function(){
-    $( ".fall2017").show();
+    $('.fall2016-table').hide();
+    $('.spring2017-table').hide();
+    $('.fall2017-table').show();
+    $('.table-header').show();
     $( ".term").hide();
     $( "#back").show();
   });
@@ -69,7 +78,72 @@ jQuery(function($){
   $('#back').click(function(){
     $( ".term").show();
     $( "#back").hide();
-    $( ".table").hide();
+    $('.fall2016-table').hide();
+    $('.spring2017-table').hide();
+    $('.fall2017-table').hide();
+  });
+
+//buttons to show courses on lookup page
+  $( ".fall16menu").hide();
+  $( ".spring17menu").hide();
+  $( ".fall17menu").hide();
+  $( ".back-lu").hide();
+  $( ".course-lists > ul").hide();
+
+  $('#f16-lu').click(function(){
+    $( ".fall16menu").show();
+    $( ".term-menu").hide();
+    $( ".back-lu").show();
+  });
+  $('#s17-lu').click(function(){
+    $( ".spring17menu").show();
+    $( ".term-menu").hide();
+    $( ".back-lu").show();
+  });
+  $('#f17-lu').click(function(){
+    $( ".fall17menu").show();
+    $( ".term-menu").hide();
+    $( ".back-lu").show();
+  });
+
+  $('.chem-list').click(function(){
+    $( ".course-lists > ul").hide();
+    $('.table-header').show();
+    $( ".chem").show();
+  });
+  $('.eg-list').click(function(){
+    $( ".course-lists > ul").hide();
+    $('.table-header').show();
+    $( ".eg").show();
+  });
+  $('.hum-list').click(function(){
+    $( ".course-lists > ul").hide();
+    $('.table-header').show();
+    $( ".hum").show();
+  });
+  $('.itm-list').click(function(){
+    $( ".course-lists > ul").hide();
+    $('.table-header').show();
+    $( ".itm").show();
+  });
+  $('.math-list').click(function(){
+    $( ".course-lists > ul").hide();
+    $('.table-header').show();
+    $( ".math").show();
+  });
+  $('.psyc-list').click(function(){
+    $( ".course-lists > ul").hide();
+    $('.table-header').show();
+    $( ".psyc").show();
+  });
+
+  $('.back-lu').click(function(){
+    $( ".term-menu").show();
+    $( ".fall16menu").hide();
+    $( ".spring17menu").hide();
+    $( ".fall17menu").hide();
+    $('.course-lists > ul').hide();
+    $( ".back-lu").hide();
   });
 
 });
