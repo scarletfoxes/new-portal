@@ -50,6 +50,8 @@ alert('You have been succesfully logged out.');
 //   }));
 // }
 
+
+//buttons to show courses 
 $('.fall2016').hide();
 $('.spring2017').hide();
 $('.fall2017').hide();
@@ -57,6 +59,7 @@ $( "#back").hide();
 
 $('#f16').click(function(){
   $( ".fall2016").show();
+
   $( ".term").hide();
   $( "#back").show();
 });
@@ -76,7 +79,7 @@ $('#f17').click(function(){
 $('#back').click(function(){
   $( ".term").show();
   $( "#back").hide();
-  $( "table").hide();
+  $( ".table").hide();
 });
 
 });

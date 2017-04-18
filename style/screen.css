@@ -347,6 +347,46 @@ footer {
   color: white;
 }
 
+.fall2016,
+.spring2017,
+.fall2017 {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.course,
+.table-header {
+  display: inline-flex;
+}
+
+h5{
+  margin-right: 10px;
+}
+
+.id {
+  min-width: 72px;
+  margin-right: 10px;
+}
+
+.des {
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.place {
+  min-width: 81px;
+  margin-right: 10px;
+}
+
+.time {
+  min-width: 90px;
+  margin-right: 10px;
+}
+
 table {
   border-spacing: 0.0625em;
   border-collapse: collapse;
