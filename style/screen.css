@@ -245,15 +245,21 @@ img, audio, video {
   display: block;
   max-width: 100%;
 }
+.menu {
+  font-size: 1.777em;/*28.43px @ 16;*/ 
+}
 
 .menu:hover {
   color: red;
   text-decoration: underline;
-}
+ } 
 
 .title:hover {
   color: red;
   text-decoration: underline;
+}
+.title {
+  text-align: center;
 }
 
 #toggle {
@@ -270,18 +276,19 @@ img, audio, video {
 }
 
 #content {
-  padding: 1.351em;/*38.4px @ 28.43px;*/
+  padding: 1.2em; /*19.2px @ 16;*/
 }
 
 #login-form {
   background-color: #DCDCDC;
   border-radius: 0.3em;
-  padding: 1.351em;/*38.4px @ 28.43px;*/
+  padding: 1.2em; /*19.2px @ 16;*/
 }
 
 #input-pass {
   padding-top: 1em;
   padding-bottom: 1em;
+
 }
 
 #input-submit {
@@ -289,8 +296,8 @@ img, audio, video {
 }
 
 #h1 {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  /*padding-top: 1em;
+  padding-bottom: 1em;*/
   text-shadow: 0.0625em 0.0625em 0.125em #000;
 }
 
@@ -361,7 +368,7 @@ footer {
 }
 
 h5 {
-  margin-right: 10px;
+  margin-right: 0.625em; /*10px;*/
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -417,9 +424,9 @@ h5 {
 
 #main {
   min-height: 72.5em;
-  margin-top: -1.8em;
+  /*margin-top: -1.8em;*/
   padding-left: 6em;
-  padding-top: 1.5em;
+  padding-top: 1em;
   /*padding: 0em;*/
   display: flex;
   flex-flow: column;
@@ -457,9 +464,9 @@ h5 {
   z-index: 1;
   width: 3em;
   height: 45%;
-  margin: 0 0 0 -50px;
-  padding: 50px;
-  padding-top: 10px;
+  margin: 0 0 0 -3.125em;/*-50px*/
+  padding: 3.125em; /*50px;*/
+  padding-top: 0.625em; /*10px;*/
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1);
@@ -468,9 +475,9 @@ h5 {
 #toggle input {
   display: block;
   position: absolute;
-  width: 44px;
-  height: 22.4px;
-  top: -2px;
+  width: 2.75em; /*44px;*/
+  height: 1.4em; /*22.4px;*/
+  top: -0.125em; /*-2px;*/
   cursor: pointer;
   opacity: 0;
   z-index: 3;
@@ -497,6 +504,7 @@ h5 {
   /*border: 0.1em solid;
   border-radius: 0.1em;*/
 }
+
 /* ===== STATE STYLES ===== */
 
 /* 3:4 */
