@@ -246,13 +246,13 @@ img, audio, video {
   max-width: 100%;
 }
 .menu {
-  font-size: 1.777em;/*28.43px @ 16;*/ 
+  font-size: 1.777em;/*28.43px @ 16;*/
 }
 
 .menu:hover {
   color: red;
   text-decoration: underline;
- } 
+ }
 
 .title:hover {
   color: red;
@@ -464,7 +464,7 @@ h5 {
   z-index: 1;
   width: 3em;
   height: 45%;
-  margin: 0 0 0 -3.125em;/*-50px*/
+  margin-left: -3em;/*-50px*/
   padding: 3.125em; /*50px;*/
   padding-top: 0.625em; /*10px;*/
   transform-origin: 0% 0%;
@@ -533,25 +533,27 @@ h5 {
   }
 
   .navi {
-    width: 300%;
+    width: 80%;
     line-height: 1em;
     position: relative;
-    margin-top: 0;
+    margin-top: -1.5em;
+    margin-left: -32em;
   }
 
   .navi li {
     border: thin solid white;
     float: left;
-    width: 8%;
-    /*margin: 0.2em;*/
+    width: 10%;
+    margin: 0.2em;
+    margin-left: 4em;
     padding-top: 0em;
     padding-bottom: 0;
-    font-size: 1em;
+    font-size: 0.5em;
     margin-top: -0.65em;
   }
 
   /*.navi ul {
-    margin-left: -1.5em;
+    margin-left: 100em;
   }*/
 
   .navi li a {
@@ -566,7 +568,7 @@ h5 {
     padding: 0;
   }
 
-  .navi input {
+ .navi input {
     margin-left: -30em;
   }
 
@@ -617,7 +619,10 @@ h5 {
   #burgerMenu {
     width: 100%;
     height: auto;
+    margin-left: 100em;
   }
+
+
 
   #login-form {
     width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
