@@ -103,6 +103,7 @@ jQuery(function($){
   $('#f17-lu').click(function(){
     $( ".fall17menu").show();
     $( ".term-menu").hide();
+    $('.np').remove();
     $( ".back-lu").show();
   });
 
@@ -139,11 +140,28 @@ jQuery(function($){
 
   $('.back-lu').click(function(){
     $( ".term-menu").show();
-    $( ".fall16menu").hide();
-    $( ".spring17menu").hide();
-    $( ".fall17menu").hide();
+    $( ".lookup-menus > ul").hide();
     $('.course-lists > ul').hide();
     $( ".back-lu").hide();
   });
 
+//buttons for add page
+  $( ".lookup-menus > ul").hide();
+  $( ".back-lu").hide();
+  $( ".course-lists > ul").hide();
+  $('.id-add > input').prop('checked', false);
+
+ $('#s18-lu').click(function(){
+        $('.nopin').after("<p class='np error'>Registration for this term has been denied. Please see your adviser for details</p>");
+  });
+
+ $('.id-add > input').change(function(){
+        if ($(this).prop('checked')){
+        $('.course').after("<li><button class='add-button'>Add</button></li>");
+        }
+  });
+
+ $('.add-button').click(function(){
+    $('.add-course').appendTo(".fall2017-table");
+ });
 });
