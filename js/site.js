@@ -38,7 +38,7 @@ jQuery(function($){
   $('#logout').click(function(event){
     alert('You have been succesfully logged out.');
     $('#form')[0].reset();
-    window.location = "../index.html";
+    window.location = "../logout/index.html";
     event.preventDefault();
   });
 
