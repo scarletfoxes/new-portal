@@ -366,6 +366,20 @@ h5 {
   margin-bottom: 0;
 }
 
+.id-add {
+  min-width: 95px;
+  vertical-align: baseline;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.id-add input[type="check"],
+.label {
+  display: inline-block;
+  display: inline-block;
+}
+
 .id {
   min-width: 72px;
   margin-right: 10px;
