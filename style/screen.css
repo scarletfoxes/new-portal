@@ -187,6 +187,7 @@ html {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   background-color: #FFFFFF;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /*all em's are divided by new base 16*/
