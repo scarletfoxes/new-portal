@@ -220,6 +220,16 @@ li a {
   color: #778899;
 }
 
+.navi li {
+  font-size: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navi input {
+  margin-left: -1.5em;
+}
+
 /* ======= Form =============*/
 label,
 input {
@@ -253,9 +263,10 @@ img, audio, video {
 
 /* ===== LAYOUT STYLES ===== */
 #hamburger {
-  padding: 10px;
+  padding: 0.5em;
   border: 0;
   z-index: 99;
+  margin-left: -1.5em;
 }
 
 #content {
@@ -295,6 +306,11 @@ img, audio, video {
 #news {
   text-align: center;
   margin: .5em;
+}
+
+.navi {
+  position: fixed;
+  margin-top: 2.6em;
 }
 
 .hd {
@@ -380,11 +396,6 @@ h5 {
 
 /****FLEXBOX STUFF FOR MAIN-PAGE IDK WHERE TO PUT IT*********************/
 
-#navi {
-  position: fixed;
-  margin-top: 0.1em;
-}
-
 #main section {
   border-style: solid;
   border-width: thick;
@@ -393,7 +404,7 @@ h5 {
 #main {
   min-height: 72.5em;
   margin-top: -1.8em;
-  padding-left: 10em;
+  padding-left: 6em;
   padding-top: 1.5em;
   /*padding: 0em;*/
   display: flex;
@@ -430,7 +441,7 @@ h5 {
 #burgerMenu {
   background-color: #191919;
   z-index: 1;
-  width: 5.5em;
+  width: 3em;
   height: 45%;
   margin: 0 0 0 -50px;
   padding: 50px;
@@ -500,20 +511,26 @@ h5 {
   }
 
   .navi {
-    width: 100%;
+    width: 300%;
     line-height: 1em;
-    position: absolute;
+    position: relative;
+    margin-top: 0;
   }
 
   .navi li {
     border: thin solid white;
     float: left;
-    width: 13%;
-    margin: 0.2em;
-    padding: 0;
-    background-color: yellow;
-
+    width: 8%;
+    /*margin: 0.2em;*/
+    padding-top: 0em;
+    padding-bottom: 0;
+    font-size: 1em;
+    margin-top: -0.65em;
   }
+
+  /*.navi ul {
+    margin-left: -1.5em;
+  }*/
 
   .navi li a {
     display: block;
@@ -526,6 +543,18 @@ h5 {
     list-style-type: none;
     padding: 0;
   }
+
+  .navi input {
+    margin-left: -30em;
+  }
+
+#hamburger {
+  margin-left: -30em;
+}
+
+#burgerMenu {
+  margin-left: -3em;
+}
 
   #main {
     min-height: 31.25em;
