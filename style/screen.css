@@ -292,6 +292,11 @@ img, audio, video {
   /*background-color: yellow;*/
 }
 
+#news {
+  text-align: center;
+  margin: .5em;
+}
+
 .hd {
   text-transform: uppercase;
   font-weight: bold;
