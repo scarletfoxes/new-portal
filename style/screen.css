@@ -269,6 +269,16 @@ img, audio, video {
 }
 
 /* ===== LAYOUT STYLES ===== */
+
+#redCol {
+  padding: 0.25em;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-style: solid;
+  border-width: thick;
+  /*background-color: yellow;*/
+}
+
 #hamburger {
   padding: 0.5em;
   border: 0;
@@ -302,14 +312,6 @@ img, audio, video {
   text-shadow: 0.0625em 0.0625em 0.125em #000;
 }
 
-#redCol {
-  padding: 0.5em;
-  margin-left: 20em;
-  margin-right: 20em;
-  border-style: solid;
-  border-width: thick;
-  /*background-color: yellow;*/
-}
 
 #news {
   text-align: center;
@@ -553,9 +555,9 @@ h5 {
     margin-top: -0.65em;
   }
 
-  /*.navi ul {
+  .navi ul {
     margin-left: 100em;
-  }*/
+  }
 
   .navi li a {
     display: block;
@@ -623,7 +625,14 @@ h5 {
     margin-left: 100em;
   }
 
-
+  #redCol {
+    padding: 0.25em;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-style: solid;
+    border-width: thick;
+    /*background-color: yellow;*/
+  }
 
   #login-form {
     width: 31.24%; /*156.24/500=0.3124, 208.32/500=0.4166*/
