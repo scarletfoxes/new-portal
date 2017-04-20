@@ -11,6 +11,8 @@ jQuery(function($){
   var showError = false;
   window.currentUser = "";
   window.currentPassword = "";
+  var form =  $('#form');
+  if (form.lengh === 1) { form[0].reset() };
 
   $('#un').on('keyup focus blur', function(){
     window.currentUser = $(this).val();
