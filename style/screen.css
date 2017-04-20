@@ -529,6 +529,10 @@ h5 {
   color: red;
 }
 
+.redi {
+  padding-top: 1em;
+}
+
 /* ===== STATE STYLES ===== */
 
 /* 3:4 */
@@ -556,12 +560,20 @@ h5 {
     line-height: 1.1998em;/*25.59px @ 21.328px*/
   }
 
+  .logout {
+    text-align: center;
+  }
+
   .back {
     padding-top: 4em;
   }
 
   .redi {
     padding-top: 5em;
+  }
+
+  #course {
+    padding-top: 2em;
   }
 
   .navi {
@@ -575,9 +587,9 @@ h5 {
   .navi li {
     border: thin solid white;
     float: left;
-    width: 10%;
-    margin: 0.2em;
-    margin-left: 1.5em;
+    width: 9.5%;
+    margin: 0.09em;
+    margin-left: 0.9em;
     padding-top: 0;
     padding-bottom: 0;
     font-size: 0.5em;
