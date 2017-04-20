@@ -12,7 +12,7 @@ jQuery(function($){
   window.currentUser = "";
   window.currentPassword = "";
   var form =  $('#form');
-  if (form.lengh === 1) { form[0].reset() };
+  if (form.lengh === 1) { form[0].reset() }
 
   $('#un').on('keyup focus blur', function(){
     window.currentUser = $(this).val();
@@ -153,17 +153,17 @@ jQuery(function($){
   $( ".course-lists > ul").hide();
   $('.id-add > input').prop('checked', false);
 
- $('#s18-lu').click(function(){
-        $('.nopin').after("<p class='np error'>Registration for this term has been denied. Please see your adviser for details</p>");
+  $('#s18-lu').click(function(){
+    $('.nopin').after("<p class='np error'>Registration for this term has been denied. Please see your adviser for details</p>");
   });
 
- $('.id-add > input').change(function(){
-        if ($(this).prop('checked')){
-        $('.course').after("<li><button class='add-button'>Add</button></li>");
-        }
+  $('.id-add > input').change(function(){
+    if ($(this).prop('checked')){
+      $('.course').after("<li><button class='add-button'>Add</button></li>");
+    }
   });
 
- $('.add-button').click(function(){
+  $('.add-button').click(function(){
     $('.add-course').appendTo(".fall2017-table");
- });
+  });
 });
